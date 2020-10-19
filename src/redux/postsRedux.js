@@ -11,11 +11,30 @@ const FETCH_SUCCESS = createActionName('FETCH_SUCCESS');
 const FETCH_ERROR = createActionName('FETCH_ERROR');
 
 /* action creators */
-export const fetchStarted = payload => ({ payload, type: FETCH_START });
+export const fetchStarted = () => ({ type: FETCH_START });
 export const fetchSuccess = payload => ({ payload, type: FETCH_SUCCESS });
 export const fetchError = payload => ({ payload, type: FETCH_ERROR });
 
 /* thunk creators */
+export const fetchPostsRequest = () => {
+  return async dispatch => {
+
+    dispatch(fetchStarted());
+    try {
+
+      // let res = await axios.get(`${API_URL}/posts`);
+      const res = {
+        data: [{ id: 1, title: 'Hello', description: 'Lorem Ipsum', author: 'John Doe' }]
+      };
+      await new Promise((resolve, reject) => setTimeout(resolve, 2000));
+
+      dispatch(fetchSuccess(res.data));
+    } catch(e) {
+      dispatch(fetchError(e.message));
+    }
+
+  };
+};
 
 /* reducer */
 export const reducer = (statePart = [], action = {}) => {

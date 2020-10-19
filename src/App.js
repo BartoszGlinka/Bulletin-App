@@ -7,12 +7,11 @@ import { CssBaseline } from '@material-ui/core';
 
 import { store } from './redux/store';
 
-import { MainLayout } from './components/layout/MainLayout/MainLayout';
-import { Header } from './components/layout/Header/Header';
-import { Homepage } from './components/views/Homepage/Homepage';
+import MainLayout from './components/layout/MainLayout/MainLayout';
+import Homepage from './components/views/Homepage/Homepage';
 import { Post } from './components/views/Post/Post';
-import { PostEdit } from './components/views/PostEdit/PostEdit';
-import { PostAdd } from './components/views/PostAdd/PostAdd';
+import { PostEdit } from './components/features/PostEdit/PostEdit';
+import PostAdd from './components/features/PostAdd/PostAdd';
 import { NotFound } from './components/views/NotFound/NotFound';
 
 const theme = createMuiTheme({
@@ -30,7 +29,6 @@ const App = () => (
           <MainLayout>
             <Switch>
               <Route exact path='/' component={Homepage} />
-              <Route exact path='/header' component={Header} />
               <Route exact path='/post/add' component={PostAdd} />
               <Route exact path='/post/:id' component={Post} />
               <Route exact path='/post/:id/edit' component={PostEdit} />
