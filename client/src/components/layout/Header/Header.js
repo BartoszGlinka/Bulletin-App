@@ -6,9 +6,8 @@ import styles from './Header.module.scss';
 
 const Header = ({className}) => (
   <div className={clsx(className, styles.root)}>
-    <h2>Header</h2>
-    <a href="/" className={styles.logLink}>Zaloguj</a>
-    <a href="/" className={styles.logLink}>Wyloguj</a>
+    <a href="https://google.com" className={styles.logLink}>Zaloguj</a>
+    <a href="https://google.com" className={styles.logLink}>Wyloguj</a>
   </div>
 );
 

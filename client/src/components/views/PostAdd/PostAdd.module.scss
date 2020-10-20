@@ -1,0 +1,17 @@
+@import '../../../styles/settings.scss';
+
+ .root {
+   display: flex;
+   max-width: 900px;
+   height: 100%;
+   flex-direction: column;
+   margin: 0 auto;
+ }
+
+ .container {
+  display: flex;
+  width: 450px;
+  height: 100%;
+  flex-direction: column;
+  margin: 0 auto;
+}

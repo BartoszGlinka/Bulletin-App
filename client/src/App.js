@@ -11,7 +11,7 @@ import MainLayout from './components/layout/MainLayout/MainLayout';
 import Homepage from './components/views/Homepage/Homepage';
 import { Post } from './components/views/Post/Post';
 import { PostEdit } from './components/features/PostEdit/PostEdit';
-import PostAdd from './components/features/PostAdd/PostAdd';
+import PostAdd from './components/views/PostAdd/PostAdd';
 import { NotFound } from './components/views/NotFound/NotFound';
 
 const theme = createMuiTheme({

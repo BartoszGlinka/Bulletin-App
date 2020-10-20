@@ -1,0 +1,28 @@
+@import '../../../styles/settings.scss';
+
+.root {
+    margin-left: 10px;
+}
+
+.container {
+    margin-bottom : 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.logo {
+    background-color:#34495e ;
+    padding: 0 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 10px; 
+}
+.buttonNav {
+    border: 1px;
+    background-color: #74b9ff;
+    padding: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px #74b9ff;
+    margin-left: 10px;
+}

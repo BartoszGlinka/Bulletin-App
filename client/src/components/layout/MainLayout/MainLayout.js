@@ -7,7 +7,12 @@ import styles from './MainLayout.module.scss';
 
 const MainLayout = ({className, children}) => (
   <div className={clsx(className, styles.root)}>
-    <h2>MainLayout</h2>
+    <div className={styles.container}>
+      <a href="/" className={styles.logo}><h2>Bulletin App</h2></a>
+      <a href="/post/add" className={styles.buttonNav}>Add Post</a>
+      <a href="/post/:id" className={styles.buttonNav}>One Post</a>
+      <a href="/post/:id/edit" className={styles.buttonNav}>Edit Post</a>
+    </div>    
     <Header />
     {children}
   </div>
