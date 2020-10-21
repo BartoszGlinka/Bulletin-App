@@ -25,8 +25,8 @@ exports.addNew = async (req, res) => {
 
     try {
 
-      const { id, title, text, author } = req.body;
-      const newPost = new Post({ id, title, text, author });
+      const { id, title, text, author,created, updated, status} = req.body;
+      const newPost = new Post({ id, title, text, author,created, updated, status });
       await newPost.save();
       res.json({ message: 'OK' });
       res.json(await Post.find());

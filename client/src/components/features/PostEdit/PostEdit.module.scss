@@ -1,4 +1,22 @@
 @import '../../../styles/settings.scss';
 
-// .root {
-// }
+.root {
+  display: flex;
+  max-width: 900px;
+  height: 800px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.button {
+  font-weight: normal;
+  background-color: #74b9ff;
+}
+
+.form {
+  display: flex;
+  max-width: 900px;
+  height: 100%;
+  flex-direction: column;
+  margin: 0 auto;
+}
